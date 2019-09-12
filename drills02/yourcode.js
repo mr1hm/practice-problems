@@ -38,7 +38,6 @@ function getMinMaxMean(array){
 }
 
 function findMode(array){
-  debugger;
   var numberCount = {};
   var comparison = 0;
   var mostFrequent;
@@ -47,14 +46,13 @@ function findMode(array){
     if (numberCount[number] === undefined) {
       numberCount[number] = 1;
     } else {
-      numberCount[number] = numberCount[number] + 1;
+      numberCount[number] += 1;
     }
     if (numberCount[number] >= comparison) {
       comparison = numberCount[number];
       mostFrequent = array[i];
     }
   }
-  console.log(numberCount);
   return mostFrequent;
 }
 
