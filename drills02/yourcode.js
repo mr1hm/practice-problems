@@ -55,21 +55,3 @@ function findMode(array){
   }
   return mostFrequent;
 }
-
-  //   var count = {};
-//   var compare = 0;
-//   var mostFrequent;
-//   for (var i = 0; i < array.length; i++) {
-//     var number = array[i];
-//     if (count[number] === undefined) {
-//       count[number] = 1;
-//     } else {
-//       count[number] = count[number] + 1;
-//     }
-//     if (count[number] > compare) {
-//       compare = count[number];
-//       mostFrequent = array[i];
-//     }
-//   }
-//   return mostFrequent;
-// }
