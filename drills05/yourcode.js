@@ -5,7 +5,7 @@ function populateRecords(array){
     charge: 0,
     'cash advance': 0
   };
-  var tableDiv = $('<div>').addClass('tableTest');
+  var tableDiv = $('<div>').addClass('testOutput');
   var transactionsTable = $('<tr>').addClass('testOutput transactionRecord');
   transactionsTable.html('<th class="transactionType">TYPE</th><th class="transactionLocation">SOURCE</th><th class="transactionAmount">AMOUNT</th>');
   tableDiv.append(transactionsTable)
