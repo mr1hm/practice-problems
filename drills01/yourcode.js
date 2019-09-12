@@ -11,8 +11,6 @@ function fitWithinVal(array, numberToStopAt){
   var sum = 0;
   var testSum = 0;
   var numbersAddedArray = [];
-  console.log(array);
-  debugger;
   for (var i = 0; i < array.length; i++) {
     if (sum + array[i] > numberToStopAt && array[i] === array[array.length - 1]) {
       return numbersAddedArray;
@@ -28,10 +26,17 @@ function fitWithinVal(array, numberToStopAt){
   return numbersAddedArray;
 }
 
-function getAllNamesShorterThan(){
-
+function getAllNamesShorterThan(array, length){
+  var newArr = [];
+  for (var item of array) {
+    if (item.length < length) {
+      newArr.push(item);
+    }
+  }
+  return newArr;
 }
 
-function makeLabel(){
-
+function makeLabel(person){
+  var shippingLabel = person.greeting + ' ' + person.givenName + ' ' + person.familyName + '\n' + person['home address'].streetNumber + ' ' + person['home address'].streetName + '\n' + person['home address'].city + ', ' + person['home address'].state + ' ' + person['home address'].zip;
+  return shippingLabel;
 }
